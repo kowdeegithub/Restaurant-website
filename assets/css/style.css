@@ -370,9 +370,6 @@
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
-
-
-.navbar,
 .overlay,
 .header .btn { display: none; }
 
@@ -430,6 +427,39 @@
 
 .nav-open-btn .line-3 { animation-delay: 300ms;}
 
+.navbar {
+  position: fixed;
+  background-color: var(--smoky-black-1);
+  top: 0;
+  right: -360px;
+  bottom: 0;
+  max-width: 360px;
+  width: 100%;
+  padding-inline: 30px;
+  padding-block-end: 50px;
+  overflow-y: auto;
+  visibility: hidden;
+  z-index: 2;
+  transition: var(--transition-2);
+}
+
+.navbar.active {
+  visibility: visible;
+  transform: translateX(360px);
+}
+
+.navbar .close-btn {
+  color: var(--white);
+  border: 1px solid currentColor;
+  padding: 4px;
+  border-radius: var(--radius-circle);
+  margin-inline-start: auto;
+  margin-block: 30px 20px;
+}
+
+.navbar .close-btn ion-icon { --ionicon-stroke-width: 40px; }
+
+.navbar .close-btn:is(:hover, :focus-visible) { color: var(--gold-crayola);}
 
 
 
