@@ -432,7 +432,7 @@
   position: fixed;
   background-color: var(--smoky-black-1);
   top: 0;
-  right: -360px;
+  left: -360px;
   bottom: 0;
   max-width: 360px;
   width: 100%;
@@ -477,7 +477,7 @@
 
 .navbar-link {
   position: relative;
-  font-size: var(--fontSize-title-2);
+  font-size: var(--fontSize-title-0);
   text-transform: uppercase;
   padding-block: 10px;
   max-width: unset;
@@ -487,7 +487,7 @@
 
 .navbar-link .span { transition: var(--transition-1); }
 
-.navbar-link .span:is(:hover, :focus-visible, .active) .span {
+.navbar-link:is(:hover, :focus-visible, .active) .span {
   color: var(--gold-crayola);
   transform: translateX(20px);
 }
@@ -518,9 +518,9 @@
   margin-inline: auto;
 }
 
-.navbar .contact-label { margin-block-end: 10px;}
+.navbar .contact-label { margin-block-end: 10px; }
 
-.navbar::-webkit-scrollbar-thumb { background-color: var(--white-alpha-10);}
+.navbar::-webkit-scrollbar-thumb { background-color: var(--white-alpha-10); }
 
 .overlay {
   position: fixed;
