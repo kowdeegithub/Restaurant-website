@@ -191,7 +191,7 @@
 
 
 /*-----------------------------------*\
-  #TYPOGRAPHY 1:11:33
+  #TYPOGRAPHY 
 \*-----------------------------------*/
 
 .display-1,
@@ -291,8 +291,6 @@
 }
 
 .contact-number::after { bottom: -5px;}
-
-.text-center { text-align: center;}
 
 
 
