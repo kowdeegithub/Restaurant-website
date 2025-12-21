@@ -365,6 +365,18 @@ body.nav-active { overflow: hidden; }
 
 .btn:is(:hover, :focus-visible)::before { bottom: -50%; }
 
+.btn:is(:hover, :focus-visible) .text-1 { transform: translateY(-40px); }
+
+.btn:is(:hover, :focus-visible) .text-2 { 
+  transform: translate(-50%, -50%); 
+  top: 50%;
+}
+
+.btn-secondary::before { background-color: var(--smoky-black-1); }
+
+.btn-secondary .text-2 { color: var(--white); }
+
+
 
 
 
