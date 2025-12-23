@@ -733,6 +733,7 @@ body.nav-active { overflow: hidden; }
 
 .slider-reveal {
   transform: translateY(30px);
+  opacity: 0;
 }
 
 .hero .slider-item.active .slider-reveal {
