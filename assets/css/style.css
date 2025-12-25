@@ -307,6 +307,13 @@ body.nav-active { overflow: hidden; }
   object-fit: cover;
 }
 
+.img-holder {
+  aspect-ratio: var(--width) / var(--height);
+  overflow: hidden;
+  background-color: var(--black-10);
+}
+
+
 .section-subtitle {
   position: relative;
   color: var(--gold-crayola);
