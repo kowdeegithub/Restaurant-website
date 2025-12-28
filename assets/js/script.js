@@ -130,3 +130,27 @@ addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouserover", functio
 addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseover", autoSlide);
 
 window.addEventListener("load", autoSlide);
+
+/*
+ * Autro Slide
+ */
+
+const parallaxItems = document.querySelectorAll("[data-parallax-item]");
+
+window.addEventListener("mousemove", function (event) {
+
+  let x = (event.clientX / window.innerWidth * 10) - 5;
+  let y = (event.clientY / window.innerHeight * 10) - 5;
+
+  // reverse direction
+  x = x - (x * 2);
+  y = y - (y * 2);
+
+  for (let i = 0; i < parallaxItems.length; i++) {
+    const speed = Number(parallaxItems[i].dataset.parallaxSpeed);
+
+    parallaxItems[i].style.transform =
+      `translate3d(${x * speed}px, ${y * speed}px, 0px)`;
+  }
+
+});
