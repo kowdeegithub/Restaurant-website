@@ -878,8 +878,7 @@ body.nav-active { overflow: hidden; }
 
 .about-banner {
   position: relative;
-  max-width: 570px;
-  margin-inline: auto;
+  margin-block-end: 120px;
 }
 
 .about-banner > .w-100 { padding-inline-start: 50px; }
