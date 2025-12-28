@@ -439,7 +439,12 @@ body.nav-active { overflow: hidden; }
 
 .btn-text:is(:hover, :focus-visible) { color: var(--white);}
 
-
+.shape {
+  display: none;
+  position: absolute;
+  max-width: max-content;
+  z-index: -1;
+}
 
 /*-----------------------------------*\
   #PRELOAD
@@ -812,7 +817,32 @@ body.nav-active { overflow: hidden; }
   #SERVICE
 \*-----------------------------------*/
 
+.service .section-subtitle { margin-block-end: 16px;}
 
+.service .section-text { margin-block-end: 40px;}
+
+.service-card { overflow: hidden; }
+
+.service-card .has-before {
+  padding-block: 30px;
+  margin-block-end: 26px;
+}
+
+.service-card .has-before::before {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 100%;
+  background-image: url(../images/img-pattern.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  transition: var(--transition-2);
+  transition-delay: 0;
+  z-index: -1;
+  will-change: transform;
+}
 
 
 
