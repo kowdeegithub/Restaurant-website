@@ -925,7 +925,39 @@ body.nav-active { overflow: hidden; }
   #SPECIAL DISH
 \*-----------------------------------*/
 
+.special-dish-banner { 
+  position: relative;
+  max-width: 940px;
+  aspect-ratio: 940 / 900;
+  margin-inline: auto;
+  overflow: hidden;
+}
 
+.special-dish-content { padding-block: 70px; }
+
+.special-dish .abs-img { 
+  margin-inline: auto;
+  margin-block-end: 12px;
+}
+
+.special-dish .section-text { margin-block: 16px 40px; }
+
+.special-dish-content .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 40px;
+  gap: 20px;
+}
+
+.special-dish-content .del {
+  text-decoration: none;
+  color: var(--davys-grey);
+}
+
+.special-dish-content .span { color: var(--gold-crayola); }
+
+.special-dish .btn { margin-inline: auto; }
 
 
 
