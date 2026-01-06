@@ -372,6 +372,11 @@ body.nav-active { overflow: hidden; }
   top: 50%;
 }
 
+.btn-secondary {
+  background-color: var(--gold-crayola);
+  color: var(--black);
+}
+
 .btn-secondary::before { background-color: var(--smoky-black-1); }
 
 .btn-secondary .text-2 { color: var(--white); }
@@ -1170,8 +1175,22 @@ body.nav-active { overflow: hidden; }
 
 .input-field[type="date"]::-webkit-calendar-picker-indicator { opacity: 0; }
 
+textarea.input-field {
+  resize: none;
+  height: 140px;
+  padding-block: 20px;
+  line-height: var(--lineHeight-1);
+}
 
+.form-left .btn {
+  max-width: 100%;
+  width: 100%;
+}
 
+.form-right {
+  background-repeat: no-repeat;
+  background-position: top left;
+}
 
 /*-----------------------------------*\
   #FEATURES
