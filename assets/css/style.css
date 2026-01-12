@@ -1470,3 +1470,31 @@ textarea.input-field {
  .topbar .link:is(:hover, :focus-visible) { color: var(--gold-crayola); }
 
 }
+
+/*
+ * HEADER
+ */
+
+ .header { top: 51px; }
+
+ .header.active { top: 0; }
+ 
+ .header .btn {
+  display: block;
+  margin-inline-start: auto;
+ }
+
+ /*
+ * HERO
+ */
+
+ .hero-btn { transform: scale(0.7); }
+ 
+
+ /*
+ * TOPBAR
+ */
+  
+ 
+  
+ 
